@@ -1,11 +1,18 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-        long y=1;
-        while(y<n)
+        long y=0;
+        
+        for(long i=1;i<=n;i=i*2)
         {
-            y=y*2;
+            if((n&i)==i)
+            {
+                y++;
+            }
+            if(y>1)
+            {
+                return false;
+            }
         }
-        return y==n;
-    
+        return y==1;
     }
 }
