@@ -6,7 +6,7 @@ class Solution {
             {
                 return false;
             }
-            n=n/2;
+            n=n>>1;
         }
         return n==1;
         
