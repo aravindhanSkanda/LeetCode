@@ -12,6 +12,10 @@ class Solution {
 					{
 					subList.add(j+1);
 					}
+                if(subList.size()>k)
+                {
+                    break;
+                }
 			}
 			if(subList.size()==k)
 			{
