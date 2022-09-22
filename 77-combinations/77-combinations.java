@@ -4,20 +4,16 @@ class Solution {
 		
 		for(int i=1;i<=1<<n;i++)
 		{
-           // System.out.println(i);
 		List <Integer> subList = new ArrayList();
-		int c=0;
 			for(int j=0;j<n;j++)
 			{
                 
 					if((i&(1<<j))==(1<<j))
 					{
-					c++;
 					subList.add(j+1);
 					}
 			}
-        //    System.out.println(Arrays.toString(subList.toArray()));
-			if(c==k)
+			if(subList.size()==k)
 			{
 				ans.add(subList);
 			}
