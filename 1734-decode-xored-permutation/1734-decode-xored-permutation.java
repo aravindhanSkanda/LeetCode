@@ -8,7 +8,6 @@ class Solution {
         while(j<encoded.length)
         {
             per[0]=per[0]^encoded[j];
-            //System.out.println(per[0]+":"+j);
             j+=2;
         }
         
